@@ -1,0 +1,86 @@
+{
+  "name": "Yuni Catalog",
+  "apps": [
+    {
+      "id": "yuni-installer",
+      "name": "YuniInstaller",
+      "description": "YuniInstaller App - Auto-updater, YuniGram, YuniTube, and LSPatch Xposed module engine.",
+      "packageName": "com.yuni.installer",
+      "kind": "tool",
+      "releases": [
+        {
+          "versionName": "1.1.0",
+          "versionCode": 10100,
+          "url": "https://github.com/nanasesumireofficial-dot/YuniInstaller/releases/download/v1.1.0/yuni-installer.apk",
+          "sha256": null,
+          "notes": "Self-updater, YuniGram, YuniTube, Notifications, and 256KB Download Engine."
+        }
+      ]
+    },
+    {
+      "id": "gms-core",
+      "name": "ReVanced GmsCore",
+      "description": "Required MicroG service for YuniTube non-root sign in, background play, and notifications.",
+      "packageName": "app.revanced.android.gms",
+      "kind": "tool",
+      "releases": [
+        {
+          "versionName": "0.3.1.241017",
+          "versionCode": 24101700,
+          "url": "https://github.com/ReVanced/GmsCore/releases/download/v0.3.1.241017/app-meta-gms-arm64-v8a-release.apk",
+          "sha256": null,
+          "notes": "Official ReVanced GmsCore (MicroG)"
+        }
+      ]
+    },
+    {
+      "id": "yunitube",
+      "name": "YuniTube",
+      "description": "Our custom YouTube mod with ad-blocking, background playback, SponsorBlock, Return YouTube Dislike, and AMOLED theme.",
+      "packageName": "com.yuni.yunitube",
+      "kind": "mod",
+      "dependencies": ["gms-core"],
+      "base": {
+        "name": "YouTube",
+        "packageName": "com.google.android.youtube",
+        "supportedVersions": ["19.16.39", "19.11.43", "19.09.37"],
+        "recommendedVersion": "19.16.39",
+        "downloadUrl": "https://github.com/ReVanced/revanced-patches/releases/download/v4.8.0/youtube-base-19.16.39.apk",
+        "sha256": null
+      },
+      "releases": [
+        {
+          "versionName": "19.16.39-yuni",
+          "versionCode": 19163900,
+          "url": "https://github.com/nanasesumireofficial-dot/YuniInstaller/releases/download/v1.1.0/yunitube.apk",
+          "sha256": null,
+          "notes": "YuniTube Release - SponsorBlock & Ad-Free"
+        }
+      ]
+    },
+    {
+      "id": "yunigram",
+      "name": "YuniGram",
+      "description": "Our custom Instagram mod with high-res photo/video downloads, ad-free feed, hidden story viewing, and developer settings.",
+      "packageName": "com.yuni.yunigram",
+      "kind": "mod",
+      "base": {
+        "name": "Instagram",
+        "packageName": "com.instagram.android",
+        "supportedVersions": ["315.0.0.35.109", "300.0.0.29.110"],
+        "recommendedVersion": "315.0.0.35.109",
+        "downloadUrl": "https://github.com/nanasesumireofficial-dot/YuniInstaller/releases/download/v1.1.0/yunigram-base-315.apk",
+        "sha256": null
+      },
+      "releases": [
+        {
+          "versionName": "1.0.0-yuni",
+          "versionCode": 10000,
+          "url": "https://github.com/nanasesumireofficial-dot/YuniInstaller/releases/download/v1.1.0/yunigram.apk",
+          "sha256": null,
+          "notes": "YuniGram Release - Built on Instagram v315"
+        }
+      ]
+    }
+  ]
+}
